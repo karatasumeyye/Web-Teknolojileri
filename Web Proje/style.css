@@ -1,37 +1,48 @@
-/* *{
-    padding:0;
-    margin: 0;
-    box-sizing: border-box;
-}
-body{
-    font-family: sans-serif;
+
+
+.bolum1{
+  margin: 0;
+  padding: 0;
+  background: url(Resimler/uzay-mor-mavi-astronomi-duvar-kagidi.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;    
 }
 
-.menu-bar{
-    background-color: darkslategray;
-    text-align: center;
-}
-.menu-bar ul {
-    display: inline-flex;
-    list-style: none;
 
+.tanıtım{
+  width: 600px;
+  background-color: rgb(28, 10, 93);
+  padding: 40px;
+  text-align: center;
+  margin: auto;
+  margin-top: 6%;
+  color:#fff;
+  font-family: sans-serif;
+  border-radius: 5%;
 }
-.menu-bar ul li {
-    width: 150px;
-    margin: 15px;
-    padding: 15px;
+
+.tanıtım img{
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
 }
-.menu-bar ul li a {
-    text-decoration: none;
-    color: aliceblue;
+ul{
+  margin: 0;
+  padding: 0;
 }
-.active, .menu-bar ul li:hover{
-    background-color: rgb(7, 100, 103);
-    border-radius: 10px;
-} */
+.tanıtım li{
+  display: inline-block;
+  margin: 7px;
+  list-style: none;
+}
+.tanıtım li a{
+  font-size: 60px;
+}
 
 .navbar-nav {
     margin: auto;
+   
   }
   
   .navbar-nav .nav-link {
@@ -52,3 +63,15 @@ body{
     }
   }
   
+   .bolum2{
+    margin: 0;
+    padding: 0;
+    background-color: antiquewhite;
+    background-size: cover;
+    height: 100vh;
+
+  } 
+    
+  
+ 
+ 
