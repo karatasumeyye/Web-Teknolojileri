@@ -1,6 +1,6 @@
 
 
-.bolum1{
+body{
   margin: 0;
   padding: 0;
   background: url(Resimler/uzay-mor-mavi-astronomi-duvar-kagidi.jpg);
@@ -63,15 +63,8 @@ ul{
     }
   }
   
-   .bolum2{
-    margin: 0;
-    padding: 0;
-    background-color: antiquewhite;
-    background-size: cover;
-    height: 100vh;
-
-  } 
-    
+  
+  
   
  
  

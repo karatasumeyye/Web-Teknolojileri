@@ -1,0 +1,77 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body{
+
+  
+    background-color: rgb(2, 93, 96);
+    /* background: url(Resimler/abant-arkaplan.jpg); */
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+  }
+
+  .navbar-nav {
+    margin: auto;
+   
+  }
+  
+  .navbar-nav .nav-link {
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    text-transform: uppercase;
+  }
+  
+  @media (max-width: 576px) {
+    .navbar-nav {
+      flex-direction: column;
+    }
+  
+    .navbar-nav .nav-link {
+      padding: 10px 0;
+      text-align: center;
+    }
+  }
+
+ .container{
+  position: relative;
+ }
+ 
+  #carouselExampleCaptions {
+    position: absolute;
+    left: 30%; 
+    z-index: 9999; /* Slider'ın diğer içeriklerin üstünde kalmasını sağlar */
+   margin-top: 650px;
+  }
+  
+ .bolum1,.bolum2, .bolum3 {
+  display: inline-block;
+  width: 30%;
+  height: 400px;
+  margin-right: 2%;
+  background-color: #f2f2f2;
+  padding: 20px;
+  box-sizing: border-box;
+  
+}
+
+.bolum1{
+  margin-left: 50px;
+  margin-top: 80px;
+}
+
+@media only screen and (max-width: 768px) {
+  .bolum1, .bolum2, .bolum3 {
+    width: 100%;
+    float: none;
+  }
+}
+
+
+
+
