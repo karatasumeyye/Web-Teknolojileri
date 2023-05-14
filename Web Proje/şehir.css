@@ -44,10 +44,23 @@ body{
  
   #carouselExampleCaptions {
     position: absolute;
-    left: 30%; 
+    left: 26%; 
     z-index: 9999; /* Slider'ın diğer içeriklerin üstünde kalmasını sağlar */
    margin-top: 650px;
+   width: 500px;
+   border-radius: 5px;
   }
+
+  #carouselExampleCaptions2{
+    position: absolute;
+    left: 20px;
+    z-index: 9999; /* Slider'ın diğer içeriklerin üstünde kalmasını sağlar */
+   margin-top: 650px;
+   width: 600px;
+   border-radius: 5px;
+  }
+
+  
   
  .bolum1,.bolum2, .bolum3 {
   display: inline-block;
@@ -93,6 +106,13 @@ body{
   margin-top: 2%;
   color: rgb(164, 4, 4);
 }
+
+#paragraf1{
+  text-align: center;
+  margin-left: 1%;
+  margin-right: 1%;
+}
+ 
 
 .beyaz-bolum{
   position: absolute;
