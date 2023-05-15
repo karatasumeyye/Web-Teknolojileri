@@ -51,16 +51,48 @@ body{
    border-radius: 5px;
   }
 
-  #carouselExampleCaptions2{
+
+ #carouselExampleCaptions2{
     position: absolute;
-    left: 20px;
+    left: 3%;
+    z-index: 9999; /* Slider'ın diğer içeriklerin üstünde kalmasını sağlar */
+   margin-top: 650px;
+   width: 650px;
+   border-radius: 5px;
+ 
+  }
+
+  .container2{
+    position: relative;
+   }
+
+   /* .container .carousel-control-prev,
+   .container .carousel-control-next {
+     position: absolute;
+     top: 50%;
+     transform: translateY(-50%);
+   
+   } */
+
+   
+   
+   .container2 .carousel-control-next {
+     position: absolute;
+     top: 50%;
+     transform: translateY(-50%);
+     left: 400px;
+   }
+
+   #carouselExampleCaptions3{
+    position: absolute;
+    left: 70%;
     z-index: 9999; /* Slider'ın diğer içeriklerin üstünde kalmasını sağlar */
    margin-top: 650px;
    width: 600px;
+   height: 300px;
    border-radius: 5px;
+ 
   }
-
-  
   
  .bolum1,.bolum2, .bolum3 {
   display: inline-block;
@@ -153,3 +185,6 @@ body{
   color: rgb(133, 5, 122);
 }
 
+.bolum3 li{
+  text-align: center;
+}
