@@ -8,8 +8,8 @@
 body{
 
   
-    background-color: rgb(2, 93, 96);
-    /* background: url(Resimler/abant-arkaplan.jpg); */
+    background-color: rgb(59, 102, 50);
+    /* background: url(Resimler/arka2.jpg); */
     background-size: cover;
     background-repeat: no-repeat;
     
@@ -48,7 +48,7 @@ body{
     z-index: 9999; /* Slider'ın diğer içeriklerin üstünde kalmasını sağlar */
    margin-top: 650px;
    width: 500px;
-   border-radius: 5px;
+  
   }
 
 
@@ -57,22 +57,14 @@ body{
     left: 3%;
     z-index: 9999; /* Slider'ın diğer içeriklerin üstünde kalmasını sağlar */
    margin-top: 650px;
-   width: 650px;
-   border-radius: 5px;
+   width: 500px;
+   
  
   }
 
   .container2{
     position: relative;
    }
-
-   /* .container .carousel-control-prev,
-   .container .carousel-control-next {
-     position: absolute;
-     top: 50%;
-     transform: translateY(-50%);
-   
-   } */
 
    
    
@@ -85,13 +77,11 @@ body{
 
    #carouselExampleCaptions3{
     position: absolute;
-    left: 70%;
+    left: 74%;
     z-index: 9999; /* Slider'ın diğer içeriklerin üstünde kalmasını sağlar */
    margin-top: 650px;
-   width: 600px;
-   height: 300px;
-   border-radius: 5px;
- 
+   width: 500px;
+   
   }
   
  .bolum1,.bolum2, .bolum3 {

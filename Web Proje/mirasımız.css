@@ -1,0 +1,47 @@
+.navbar-nav {
+    margin: auto;
+   
+  }
+  
+  .navbar-nav .nav-link {
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    text-transform: uppercase;
+  }
+  
+  @media (max-width: 576px) {
+    .navbar-nav {
+      flex-direction: column;
+    }
+  
+    .navbar-nav .nav-link {
+      padding: 10px 0;
+      text-align: center;
+    }
+  }
+
+  body{
+    background: url(Resimler/uzay-mor-mavi-astronomi-duvar-kagidi.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .sol-kisim{
+    background-color: #3729a6; 
+    float: left; /* Sol kısmın yan yana durmasını sağlar */
+    width: 95%;
+    height:661px;
+    margin-top: 7%;
+    margin-left: 2%;
+   
+    border-radius: 15%;
+  }
+
+  .sol-kisim img{
+  border-radius: 15%;
+
+
+  }
+
+

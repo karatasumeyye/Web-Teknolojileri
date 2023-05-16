@@ -3,7 +3,7 @@
 body{
   margin: 0;
   padding: 0;
-  background: url(Resimler/uzay-mor-mavi-astronomi-duvar-kagidi.jpg);
+  background: url(Resimler/arka2.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;    
@@ -12,7 +12,7 @@ body{
 
 .tanıtım{
   width: 600px;
-  background-color: rgb(28, 10, 93);
+  background-color: rgb(59, 102, 50);
   padding: 40px;
   text-align: center;
   margin: auto;
@@ -25,7 +25,7 @@ body{
 .tanıtım img{
   width: 200px;
   height: 200px;
-  border-radius: 50%;
+  border-radius: 45%;
 }
 ul{
   margin: 0;
