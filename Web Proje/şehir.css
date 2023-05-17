@@ -42,7 +42,7 @@ body{
  
   #carouselExampleCaptions {
     position: absolute;
-    left: 26%; 
+    left: 38%; 
     z-index: 9999; /* Slider'ın diğer içeriklerin üstünde kalmasını sağlar */
    margin-top: 650px;
    width: 500px;
@@ -166,6 +166,7 @@ body{
   background-size: cover;
   overflow-y: auto;
   position: relative;
+
 }
 #baslik3{
   text-align: center;
