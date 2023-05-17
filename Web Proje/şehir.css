@@ -6,9 +6,7 @@
 
 
 body{
-
-  
-    background-color: rgb(59, 102, 50);
+    background-color: #1a242e;
     /* background: url(Resimler/arka2.jpg); */
     background-size: cover;
     background-repeat: no-repeat;
@@ -54,7 +52,7 @@ body{
 
  #carouselExampleCaptions2{
     position: absolute;
-    left: 3%;
+    left: 2%;
     z-index: 9999; /* Slider'ın diğer içeriklerin üstünde kalmasını sağlar */
    margin-top: 650px;
    width: 500px;
