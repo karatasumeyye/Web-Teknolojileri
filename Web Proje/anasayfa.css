@@ -3,7 +3,7 @@
 body{
   margin: 0;
   padding: 0;
-  background: url(Resimler/uzay-mor-mavi-astronomi-duvar-kagidi.jpg);
+  background-color:#181D31;
   background-repeat: no-repeat;
   background-size: cover;
    
@@ -11,34 +11,28 @@ body{
 
 
 .tanıtım{
-  width: 600px;
-  background-color: rgb(28, 10, 93);
-  padding: 40px;
+  
+  width: 100%;
+  height: auto;
+  background-color: #678983;
+  /* padding: 40px; */
   text-align: center;
-  margin: auto;
-  margin-top: 6%;
-  color:#fff;
-  font-family: sans-serif;
-  border-radius: 5%;
+  /* margin-left: 5%; */
+  margin-top: 0;
+  color:black;
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .tanıtım img{
-  width: 200px;
+  width: auto ;
   height: 200px;
   border-radius: 50%;
+  margin-top: 2%;
 }
-ul{
-  margin: 0;
-  padding: 0;
-}
-.tanıtım li{
-  display: inline-block;
-  margin: 7px;
-  list-style: none;
-}
-.tanıtım li a{
-  font-size: 60px;
-}
+
+
+
+
 
 .navbar-nav {
     margin: auto;
@@ -63,8 +57,84 @@ ul{
     }
   }
   
+  .navbar{
+    background-color: #242323;
+  }
   
+  article{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 22px;
+    color: #F0E9D2 ;
+    text-align: center;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 3%;
+    
+  }
   
-  
+  ul{
+    margin: 0;
+    padding: 0;
+  }
+  li{
+    display: inline-block;
+    margin: 7px;
+    list-style: none;
+  }
+  li a{
+    font-size: 40px;
+  }
  
- 
+  footer{
+    text-align: center;
+    margin-top: 5%;
+    color: #F0E9D2;
+
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 400px);
+    grid-gap: 20px;
+    margin-left: 15%;
+    margin-top: 5%;
+   
+  }
+
+  
+@media (max-width: 768px) {
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr); /* Orta ekranlar için 2 sütun */
+  }
+}
+
+@media (max-width: 480px) {
+  .grid-container {
+    grid-template-columns: 1fr; /* Küçük ekranlar için 1 sütun */
+  }
+}
+  .grid-item {
+    width: 300px;
+    height: 400px;
+  }
+
+  .resim{
+    width: 100%;
+  height: 100%;
+  object-fit: cover;
+  }
+
+  .grid-container img{
+    margin:10px;
+  }
+
+
+  section{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 22px;
+    color: #F0E9D2 ;
+    text-align: center;
+    margin-top: 100px;
+
+  }
+
