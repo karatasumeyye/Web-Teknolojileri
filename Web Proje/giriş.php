@@ -1,32 +1,24 @@
 <?php
-// Kullanıcı adı ve şifreyi PHP kodunda tanımlayın
+// Kullanıcı adı ve şifreyi tanımlayın
 $storedUsername = "b221210005@sakarya.edu.tr";
 $storedPassword = "b221210005";
 
-// Login sayfasından kullanıcı adı ve şifreyi alın
-$username = $_POST['username'];
+// POST verilerini alın
+$username = $_POST['email'];
 $password = $_POST['password'];
 
-// Kullanıcı adı ve şifrenin boş olup olmadığını kontrol edin
-if (empty($username) || empty($password)) {
-  // Eğer kullanıcı adı veya şifre boşsa, hata mesajıyla birlikte login sayfasına yönlendirin
-  header('Location: Giriş.html?error=empty');
-  exit;
-}
-
-// Kullanıcı adı ve şifreyi kontrol edin
+// Kullanıcı adı ve şifre doğrulaması yapın
 if ($username === $storedUsername && $password === $storedPassword) {
-  // Login işlemi başarılı olduğunda hoş geldiniz mesajını göstermek için bir değişken tanımlayın
-  $welcomeMessage = "Hoş geldiniz, $username!";
-  
-  // Hoş geldiniz mesajıyla birlikte post edilen sayfada gösterin
-  echo "<h2>$welcomeMessage</h2>";
+    // Giriş başarılı olduğunda hoşgeldin sayfasına yönlendirin
+    header('Location: hosgeldin.php');
+    exit;
 } else {
-  // Kullanıcı adı veya şifre yanlışsa, hata mesajıyla birlikte login sayfasına yönlendirin
-  header('Location: Giriş.html?error=incorrect');
-  exit;
+    // Giriş başarısız olduğunda hata mesajıyla birlikte giriş sayfasına yönlendirin
+    header('Location: Giriş.html?error=incorrect');
+    exit;
 }
 ?>
+
 
 
   

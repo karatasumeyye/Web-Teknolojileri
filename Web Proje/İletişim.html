@@ -4,22 +4,130 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>İletişim </title>
-    <link rel ="stylesheet" href="css/bootstrap.min.css">
-    <link rel ="stylesheet" href="iletişim.css">
-    <link rel ="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>İletişim</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="iletişim.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <script src="iletisim.js" defer></script>
+    <script src="js/bootstrap.min.js"></script>
+  
+   
+
 </head>
 <body>
-</head>
-<body>
-    <section>
-        
-    </section>
-        
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-dark">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="İndex.html">AnaSayfa</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Şehir.html">Şehir</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Mirasımız.html">Mirasımız</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Özgeçmişim.html">Özgeçmiş</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="İlgi Alanlarım.html">İlgi Alanım</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="İletişim.html">İletişim</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Giriş.html">Giriş</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
 
-    
+   
 
 
+
+
+ <section>
+  <div class="iletisim">
+      <h2 style="color: #F0E9D2;">Benimle İletişime Geçebilirsiniz</h2> <br>
+      <form action="bilgiler.html" id="myForm" >
+          
+          <input type="text" name="adi" id="adi" placeholder="İsminiz..." ><br>
+          <input type="text" name="soyadi" id="soyadi" placeholder="Soyisminiz..."> <br>
+         
+          <input type="email" name="email" id="email" placeholder="Email...">  <br>
+          
+          <select name="üniversite" id="üni">
+              <option value="saü">Sakarya Üniversitesi</option>
+              <option value="subü">Sakarya Uygulamalı Bilimler Üniversitesi</option>
+          </select>
+
+          <div class="form-row" id="cinsiyet">
+              <label>Cinsiyet:</label>
+              <div class="radio-group">
+                  <input type="radio" name="cinsiyet" value="erkek">
+                  <label for="erkek">Erkek</label>
+                  <input type="radio" name="cinsiyet" value="kadin">
+                  <label for="kadin">Kadın</label>
+                  <input type="radio" name="cinsiyet" value="diger">
+                  <label for="diger">Diğer</label>
+              </div>
+          </div>
+          <div class="form-row" id="yas">
+              <label>Yaş:</label>
+              <div class="checkbox-group">
+                  <input type="checkbox" name="age">
+                  <label for="age1">18-24</label>
+                  <input type="checkbox" name="age">
+                  <label for="age2">24-30</label>
+                  <input type="checkbox" name="age">
+                  <label for="age3">30-40</label>
+              </div>
+          </div>
+
+          <br>
+
+
+          <input type="file" name="dosya" id="dosya"> <br>
+          <textarea name="mesaj" id="metin" cols="30" rows="5" placeholder="Metninizi yazınız..."></textarea>
+          <input type="submit" value="Gönder">
+          <input type="reset" value="Temizle">
+      </form>
+  </div>
+
+
+  <div class="sol">
+      <div class="sol-bilgi">
+          <h1 style="text-align: center;">İletişim Bilgilerim</h1> <br>
+          <div class="sembol">
+              <i class="fa-solid fa-house"></i>
+              <address>Bolu/Türkiye</address>
+          </div>
+          <div class="sembol">
+              <i class="fa-solid fa-envelope"></i>
+              <a href="karatasumeyye35@gmail.com">karatasumeyye35@gmail.com</a>
+          </div>
+          <div class="sembol">
+          <i class="fa-solid fa-phone"></i>
+          <a href="+1234567890">123-456-7890</a>
+          </div>
+
+
+          
+              <ul>
+                  <li><a href="https://instagram.com/sumeyyeekaratas?igshid=MzNlNGNkZWQ4Mg=="><i class="fa-brands fa-instagram" style="color: #F0E9D2;"></i></a> </li>
+                  <li><a href="https://www.linkedin.com/in/s%C3%BCmeyye-karata%C5%9F-b8981324a?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BWSWSgukTReuHj5mQmQxLQg%3D%3D"><i class="fa-brands fa-linkedin"  style="color: #F0E9D2;"></i></a> </li>
+                  <li><a href="https://github.com/karatasumeyye"><i class="fa-brands fa-github"  style="color: #F0E9D2;"></i></a> </li>
+                  <li><a href="karatasumeyye35@gmail.com"><i class="fa-regular fa-envelope"  style="color: #F0E9D2;"></i></a> </li>
+                 </ul>
+          
+      </div>
+  </div>
+</section>   
 
 </body>
 </html>
+
+

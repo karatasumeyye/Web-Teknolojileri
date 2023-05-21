@@ -1,3 +1,167 @@
 body{
     background-color: #181D31;
+    color: aliceblue;
+}
+*{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+   
+}
+
+.navbar-nav {
+    margin: auto;
+   
+  }
+  
+  .navbar-nav .nav-link {
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    text-transform: uppercase;
+  }
+  
+  @media (max-width: 576px) {
+    .navbar-nav {
+      flex-direction: column;
+    }
+  
+    .navbar-nav .nav-link {
+      padding: 10px 0;
+      text-align: center;
+    }
+  }
+
+  section{
+    position: relative;
+  }
+  
+.iletisim {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    width: 40%;
+    border: 5px solid #E6DDC4;
+    padding: 20px;
+    border-radius: 50px;
+    margin-left: 45%;
+    margin-top: 2%;
+    display: flex;
+    position: absolute;
+    box-sizing: border-box;
+}
+
+@media screen and (max-width: 900px) {
+    section{
+        flex-direction: column;
+        align-items: center;
+    }
+    .iletisim {
+    width: 80%;
+    margin: 2% auto;
+    position: static;
+    padding: 2rem;
+    }
+
+    .sol { 
+        /* important ile diğer still kuralları geçersiz kaldı */
+        width: 80% !important;
+        margin: 2% auto !important;
+        position: static !important ;
+        padding: 2rem !important;
+        padding: 2rem !important;
+        left: auto !important;
+      }
+  }
+
+.iletisim form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.iletisim form input,
+.iletisim form select,
+.iletisim form textarea {
+    margin: 10px;
+}
+
+input[type="text"], input[type="email"], textarea, select,input[type="submit"],input[type="reset"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+}
+
+
+.checkbox-group label,
+.radio-group label {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.sol{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+    height: auto;
+    padding: 3rem;
+    position: absolute;
+    background-color: #678983;
+    padding: 20px;
+    border-radius: 50px;
+    margin-top: 15%;
+    margin-left: 5%;
+    border: 5px solid #E6DDC4;
+    box-sizing: border-box;
+
+}
+
+
+.sembol{
+    margin: 0.5rem 0;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+}
+
+
+.sembol i {
+    color: #ffffff;
+    padding: 0.7rem;
+    border-radius: 50%;
+    border: 2px solid #ffffff;
+    font-size: 1.5rem;
+    margin-right: 1rem;
+}
+
+.sembol a{
+    color: #ffffff;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 0.5rem;
+    display: block;
+}
+
+.sol-bilgi address{
+    color: #ffffff;
+    margin: 0;
+    display: block;
+}
+
+ 
+ul{
+    margin: 0;
+    padding: 0;
+}
+li{
+    display: inline-block;
+    margin: 7px;
+    list-style: none;
+}
+li a{
+    font-size: 50px;
 }

@@ -42,11 +42,11 @@ body{
  
   #carouselExampleCaptions {
     position: absolute;
-    left: 38%; 
     z-index: 9999; /* Slider'ın diğer içeriklerin üstünde kalmasını sağlar */
-   margin-top: 650px;
-   width: 500px;
-  
+   width: 400px;
+  margin-bottom: 0;
+  margin-top: 30%;
+
   }
 
 
@@ -54,8 +54,7 @@ body{
     position: absolute;
     left: 2%;
     z-index: 9999; /* Slider'ın diğer içeriklerin üstünde kalmasını sağlar */
-   margin-top: 650px;
-   width: 500px;
+   width: 400px;
    
  
   }
@@ -75,23 +74,24 @@ body{
 
    #carouselExampleCaptions3{
     position: absolute;
-    left: 74%;
+    margin-right: 2%;
     z-index: 9999; /* Slider'ın diğer içeriklerin üstünde kalmasını sağlar */
-   margin-top: 650px;
-   width: 500px;
+    width: 375px;
+    margin-top: 5%;
    
   }
   
  .bolum1,.bolum2, .bolum3 {
   display: inline-block;
   width: 30%;
-  height: 600px;
+  height: 800px;
   margin-right: 2%;
   background-color: #f2f2f2;
   padding: 20px;
   box-sizing: border-box;
   border-radius: 10px;
   margin-top: 2%;
+  margin-bottom: 5%;
   
 }
 
@@ -111,7 +111,9 @@ body{
   position: relative;
   overflow-y: auto;
 }
-
+.bolum1 img{
+  width: 100%;
+}
 
 .bolum2{
   background-image: url(Resimler/bolum1.jpeg);
@@ -119,6 +121,10 @@ body{
   overflow-y: auto;
   position: relative;
   
+}
+
+.bolum2 img{
+  width: 94%;
 }
 
 #baslik1{
@@ -139,7 +145,7 @@ body{
   top: 12%;
   left: 10%;
   width: 80%;
-  height: 475px;
+  height: 650px;
   background-color: white;
   overflow-y:auto;
   border-radius: 5%;
@@ -166,7 +172,10 @@ body{
   background-size: cover;
   overflow-y: auto;
   position: relative;
+}
+.bolum3 img{
 
+  width: 100%;
 }
 #baslik3{
   text-align: center;
@@ -176,4 +185,44 @@ body{
 
 .bolum3 li{
   text-align: center;
+}
+
+
+@media only screen and (max-width: 992px) {
+  .bolum1,
+  .bolum2,
+  .bolum3 {
+    width: 45%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .bolum1,
+  .bolum2,
+  .bolum3 {
+    width: 100%;
+    float: none;
+  }
+
+  #carouselExampleCaptions {
+    width: 100%;
+    margin-top: 10%;
+  }
+
+  #carouselExampleCaptions2 {
+    width: 100%;
+    left: 0;
+  }
+
+  #carouselExampleCaptions3 {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .container2 .carousel-control-next {
+    position: static;
+    margin-top: 10px;
+    transform: none;
+    left: 0;
+  }
 }

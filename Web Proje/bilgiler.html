@@ -1,0 +1,79 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bilgi Kayıtları</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <script src="iletisim.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+ 
+</head>
+<body>
+   
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Form Sonuçları</title>
+</head>
+<body>
+
+    
+  <h2>Form Verileri</h2>
+
+  <div id="formSonuc"></div>
+
+  <script>
+    // URL'den query string parametrelerini al
+    function getQueryStringParams() {
+      var params = {};
+      if (window.location.search) {
+        var parts = window.location.search.substr(1).split("&");
+        for (var i = 0; i < parts.length; i++) {
+          var keyValue = parts[i].split("=");
+          var key = decodeURIComponent(keyValue[0]);
+          var value = decodeURIComponent(keyValue[1] || "");
+          params[key] = value;
+        }
+      }
+      return params;
+    }
+
+    // Query string parametrelerini al
+    var params = getQueryStringParams();
+
+    // Form verilerini al
+    var adi = params["adi"];
+    var soyadi = params["soyadi"];
+    var email = params["email"];
+    var universite = params["üniversite"];
+    var cinsiyet = params["cinsiyet"];
+    var yas = params["age"];
+    var metin = params["mesaj"];
+
+    // Form verilerini görüntüle
+    var formSonucDiv = document.getElementById("formSonuc");
+    var formSonucHTML = "<p>Adı: " + adi + "</p>";
+    formSonucHTML += "<p>Soyadı: " + soyadi + "</p>";
+    formSonucHTML += "<p>Email: " + email + "</p>";
+    formSonucHTML += "<p>Üniversite: " + universite + "</p>";
+    formSonucHTML += "<p>Cinsiyet: " + cinsiyet + "</p>";
+    formSonucHTML += "<p>Yaş: " + yas + "</p>";
+    formSonucHTML += "<p>Metin: " + metin + "</p>";
+    formSonucDiv.innerHTML = formSonucHTML;
+  </script>
+
+</body>
+</html>
+
+
+
+
+</body>
+</html>
+

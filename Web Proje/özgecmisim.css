@@ -1,124 +1,146 @@
 body{
     
-    background-color: #181D31;
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 100%;
+  background-color: #181D31;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
 }
 
 
 .navbar-nav {
-    margin: auto;
-   
+  margin: auto;
+ 
+}
+
+.navbar-nav .nav-link {
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+@media (max-width: 576px) {
+  .navbar-nav {
+    flex-direction: column;
   }
-  
+
   .navbar-nav .nav-link {
-    font-size: 16px;
-    font-weight: 600;
-    color: #fff;
-    text-transform: uppercase;
+    padding: 10px 0;
+    text-align: center;
   }
-  
-  @media (max-width: 576px) {
-    .navbar-nav {
-      flex-direction: column;
-    }
-  
-    .navbar-nav .nav-link {
-      padding: 10px 0;
-      text-align: center;
-    }
-  }
-  
-  section{
-    min-height: 100vh;
-    width: 100%;
-  }
+}
 
-  .egitim,.dil,.deneyim {
-    color: #f4eded; /* Yazı rengi */
-    font-size: 16px; /* Yazı boyutu */
-    line-height: 1.5; /* Satır yüksekliği */
-    margin-top: 20%;
-   
-  }
-  
+section{
+  min-height: 100vh;
+  width: 100%;
+}
 
-  .egitim {
-    position: absolute;
-    left: 30%;
-    width: 25%;
-    margin-top: 12%;
-    padding: 20px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 20px;
-   
-  }
+.egitim,.dil,.deneyim {
+  color: #f4eded; /* Yazı rengi */
+  font-size: 16px; /* Yazı boyutu */
+  line-height: 1.5; /* Satır yüksekliği */
+  margin-top: 20%;
+ 
+}
 
-  
 
-  #sembol{
-    margin-top: 10%;
-    margin-left: 3%; 
-    font-size:100px;
-    color:#E6DDC4;
-  }
-  
-  #sembol2,#sembol3{
-    font-size:100px;
-    color: #E6DDC4;
-  }
+.egitim {
+  position: absolute;
+  left: 30%;
+  width: 25%;
+  margin-top: 12%;
+  padding: 20px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 20px;
+ 
+}
 
-  .dil{
-    position: absolute;
-    left: 55%;
-    width: 25%;
-    height: auto;
-    padding: 20px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 20px;
-    margin-top: 14%;
-   
-  }
 
-  .deneyim{
-    position: absolute;
-    left: 70%;
-    width: 25%;
-    padding: 20px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 20px;
-    margin-top: 13%;
-   
-  }
 
+#sembol{
+  margin-top: 10%;
+  margin-left: 3%; 
+  font-size:100px;
+  color:#E6DDC4;
+}
+
+#sembol2,#sembol3{
+  font-size:100px;
+  color: #E6DDC4;
+}
+
+.dil{
+  position: absolute;
+  left: 55%;
+  width: 25%;
+  height: auto;
+  padding: 20px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 20px;
+  margin-top: 14%;
+ 
+}
+
+.deneyim{
+  position: absolute;
+  left: 70%;
+  width: 25%;
+  padding: 20px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 20px;
+  margin-top: 13%;
+ 
+}
+
+.orta{
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+
+@media screen and (max-width: 600px) {
   .orta{
-    width: 100%;
-    height: auto;
-    position: relative;
+    margin-top: 30%;
   }
+}
 
-  @media screen and (max-width: 600px) {
-    .orta{
-      margin-top: 30%;
-    }
+@media screen and (min-width: 601px) and (max-width: 1200px) {
+  .orta{
+    margin-top: 20%;
   }
+}
 
-  @media screen and (min-width: 601px) and (max-width: 1200px) {
-    .orta{
-      margin-top: 20%;
-    }
+
+@media screen and (min-width: 1201px) {
+  .orta{
+    margin-top: 2%;
   }
-  
-
-  @media screen and (min-width: 1201px) {
-    .orta{
-      margin-top: 2%;
-    }
-  }
+}
 
 
-  .hedef{
+.hedef{
+display: flex;
+flex-direction: column;
+align-items: center;
+background-color: #181D31;
+border: 2px solid rgba(255, 255, 255, 0.5);
+border-radius: 20px;
+padding: 20px;
+color: #E6DDC4;
+width: 70%;
+height: auto;
+position: relative;
+z-index: -1;
+font-family: sans-serif;
+font-size: 20px;
+text-align: center;
+color: #fff;
+margin-top: 10%;
+margin-left: 13%;
+
+}
+
+.seminer{
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -137,99 +159,77 @@ body{
   color: #fff;
   margin-top: 10%;
   margin-left: 13%;
-  
-  }
 
-  .seminer{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #181D31;
-    border: 2px solid rgba(255, 255, 255, 0.5);
-    border-radius: 20px;
-    padding: 20px;
-    color: #E6DDC4;
-    width: 70%;
-    height: auto;
-    position: relative;
-    z-index: -1;
-    font-family: sans-serif;
-    font-size: 20px;
-    text-align: center;
-    color: #fff;
-    margin-top: 10%;
-    margin-left: 13%;
-
-  }
+}
 
 
 
 
 
-  footer{
-    text-align: center;
-    color: #fff;
-  }
-  
-
-  .tasarim{
-    position: relative;
-  }
-
-  .bolum{
-  width: 24%;
-  height: 100vh;
-  background-color: #678983;
+footer{
   text-align: center;
-  margin-top: 0;
-  color:white;
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  text-align: center;
-  word-wrap: break-word;      /*Taşmayı önledi*/
+  color: #fff;
+}
+
+
+.tasarim{
+  position: relative;
+}
+
+.bolum{
+width: 24%;
+height: 100vh;
+background-color: #678983;
+text-align: center;
+margin-top: 0;
+color:white;
+font-family: Georgia, 'Times New Roman', Times, serif;
+text-align: center;
+word-wrap: break-word;      /*Taşmayı önledi*/
+position: absolute;
+ }
+
+ .bolum img{
+  width: auto ;
+  height: 200px;
+  border-radius: 50%;
+  margin-top: 37%;
+}
+
+.bilgi{
   position: absolute;
-   }
+  margin-left: 30%;
+  margin-top: 10%
+}
 
-   .bolum img{
-    width: auto ;
-    height: 200px;
-    border-radius: 50%;
-    margin-top: 37%;
-  }
-
-  .bilgi{
-    position: absolute;
-    margin-left: 30%;
-    margin-top: 10%
-  }
-
-  article{
-    color: #fff;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 20px;
-  }
+article{
+  color: #fff;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 20px;
+}
 
 
-  ul{
-    margin: 0;
-    padding: 0;
-  }
-  li{
-    display: inline-block;
-    margin: 7px;
-    list-style: none;
-  }
-  li a{
-    font-size: 40px;
-  }
+ul{
+  margin: 0;
+  padding: 0;
+}
+li{
+  display: inline-block;
+  margin: 7px;
+  list-style: none;
+}
+li a{
+  font-size: 40px;
+}
 
-  footer{
-    text-align: center;
-    margin-top: 5%;
-    color: #F0E9D2;
+footer{
+  text-align: center;
+  margin-top: 5%;
+  color: #F0E9D2;
 
-  }
-   
+}
+ 
 
 
 
-   
+ 
