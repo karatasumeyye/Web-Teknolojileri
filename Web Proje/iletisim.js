@@ -1,39 +1,5 @@
 
-  // document.getElementById('myForm').addEventListener('submit', function(event) {
-  //   var adiInput = document.getElementById('adi');
-  //   var soyadiInput = document.getElementById('soyadi');
-  //   var emailInput = document.getElementById('email');
-  //   var uniSelect = document.getElementById('üni');
-  //   var cinsiyetInputs = document.getElementsByName('cinsiyet');
-  //   var yasInputs = document.getElementsByName('age');
-  //   var metinInput = document.getElementById('metin');
-    
-  //   if (adiInput.value.trim() === '' || soyadiInput.value.trim() === '' || emailInput.value.trim() === '' || uniSelect.value === '' || getSelectedRadioValue(cinsiyetInputs) === '' || getCheckedCheckboxes(yasInputs).length === 0 || metinInput.value.trim() === '') {
-  //     alert('Tüm form alanları doldurulmalıdır');
-  //     event.preventDefault(); // Formun gönderilmesini engelle
-  //   }
-  // });
-  
-  // function getSelectedRadioValue(inputs) {
-  //   for (var i = 0; i < inputs.length; i++) {
-  //     if (inputs[i].checked) {
-  //       return inputs[i].value;
-  //     }
-  //   }
-  //   return '';
-  // }
-  
-  // function getCheckedCheckboxes(inputs) {
-  //   var checkedCheckboxes = [];
-  //   for (var i = 0; i < inputs.length; i++) {
-  //     if (inputs[i].checked) {
-  //       checkedCheckboxes.push(inputs[i]);
-  //     }
-  //   }
-  //   return checkedCheckboxes;
-  // }
-
-  
+ 
  
 
 document.getElementById('myForm').addEventListener('submit', function(event) {

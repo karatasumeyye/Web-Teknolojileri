@@ -1,10 +1,14 @@
-<?php
-// Kullanıcı adını alın
-$username = $_POST['username'];
 
-// Hoşgeldin mesajını oluştur
-$welcomeMessage = "Hoşgeldin, " . $username . "!";
-
-// Hoşgeldin mesajını göster
-echo "<h2>" . $welcomeMessage . "</h2>";
-?>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hoşgeldin Sayfası</title>
+</head>
+<body>
+    <h2> Hoşgeldiniz.</h2>
+    <br>
+    <a href="index.html">Anasayfa</a>
+    <br>
+     <a href="Giriş.html">Sayfaya Geri Dön</a>
+</body>
+</html>

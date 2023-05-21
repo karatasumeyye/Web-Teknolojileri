@@ -30,32 +30,6 @@ body{
   }
 }
 
-section{
-  min-height: 100vh;
-  width: 100%;
-}
-
-.egitim,.dil,.deneyim {
-  color: #f4eded; /* Yazı rengi */
-  font-size: 16px; /* Yazı boyutu */
-  line-height: 1.5; /* Satır yüksekliği */
-  margin-top: 20%;
- 
-}
-
-
-.egitim {
-  position: absolute;
-  left: 30%;
-  width: 25%;
-  margin-top: 12%;
-  padding: 20px;
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  font-size: 20px;
- 
-}
-
-
 
 #sembol{
   margin-top: 10%;
@@ -69,78 +43,110 @@ section{
   color: #E6DDC4;
 }
 
+.egitim,.dil,.deneyim {
+  color: #f4eded; /* Yazı rengi */
+  font-size: 16px; /* Yazı boyutu */
+  line-height: 1.5; /* Satır yüksekliği */
+ 
+}
+
+
+.egitim {
+  position: absolute;
+  left: 30%;
+  width: 25%;
+  margin-top: 12%;
+  padding: 20px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 20px;
+  top: 0;
+ 
+}
+
+
+
+
 .dil{
   position: absolute;
-  left: 55%;
+  left: 70%;
   width: 25%;
   height: auto;
   padding: 20px;
   font-family: Georgia, 'Times New Roman', Times, serif;
   font-size: 20px;
-  margin-top: 14%;
+  top: 14%;
  
 }
 
 .deneyim{
   position: absolute;
-  left: 70%;
+  left: 80%;
   width: 25%;
   padding: 20px;
   font-family: Georgia, 'Times New Roman', Times, serif;
   font-size: 20px;
-  margin-top: 13%;
+  top: 0;
+
  
 }
 
-.orta{
-  width: 100%;
+.bolum{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #678983;
+  border: 5px solid rgba(207, 204, 204, 0.5);
+  border-radius: 10px;
+  padding: 10px;
+  color: #E6DDC4;
+  width: 70%;
   height: auto;
   position: relative;
+  z-index: -1;
+  font-family: sans-serif;
+  font-size: 20px;
+  text-align: center;
+  color: #fff;
+  margin-top: 5%;
+  margin-left: 13%;
+ }
+ 
+
+ .bolum img{
+  width: auto ;
+  height: 200px;
+  border-radius: 50%;
+  margin-top: 2%;
 }
 
-@media screen and (max-width: 600px) {
-  .orta{
-    margin-top: 30%;
+.bilgi {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px;
+  border: 5px solid #E6DDC4;
+  width: 70%;
+  height: auto;
+  position: relative;
+  margin-top: 5%;
+  margin-left: 13%;
+}
+
+.bilgi > div {
+  flex: 1 1 300px; /* İçerikleri aynı genişlikte tutmak için */
+  margin: 10px;
+  padding: 10px;
+}
+
+@media (max-width: 768px) {
+  .bilgi > div {
+    flex-basis: 100%; /* Ekran küçüldüğünde tek sütun haline gelmesi için */
   }
 }
 
-@media screen and (min-width: 601px) and (max-width: 1200px) {
-  .orta{
-    margin-top: 20%;
-  }
+#dil,#egitim,#deneyim{
+  margin-left: 3%;
 }
-
-
-@media screen and (min-width: 1201px) {
-  .orta{
-    margin-top: 2%;
-  }
-}
-
-
 .hedef{
-display: flex;
-flex-direction: column;
-align-items: center;
-background-color: #181D31;
-border: 2px solid rgba(255, 255, 255, 0.5);
-border-radius: 20px;
-padding: 20px;
-color: #E6DDC4;
-width: 70%;
-height: auto;
-position: relative;
-z-index: -1;
-font-family: sans-serif;
-font-size: 20px;
-text-align: center;
-color: #fff;
-margin-top: 10%;
-margin-left: 13%;
-
-}
-
-.seminer{
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -157,55 +163,39 @@ margin-left: 13%;
   font-size: 20px;
   text-align: center;
   color: #fff;
-  margin-top: 10%;
+  margin-top: 5%;
   margin-left: 13%;
+  
+  }
+  
+  .seminer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #181D31;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+    padding: 20px;
+    color: #E6DDC4;
+    width: 70%;
+    height: auto;
+    position: relative;
+    z-index: -1;
+    font-family: sans-serif;
+    font-size: 20px;
+    text-align: center;
+    color: #fff;
+    margin-top: 5%;
+    margin-left: 13%;
+  
+  }
 
-}
 
-
-
-
-
-footer{
-  text-align: center;
-  color: #fff;
-}
-
-
-.tasarim{
-  position: relative;
-}
-
-.bolum{
-width: 24%;
-height: 100vh;
-background-color: #678983;
-text-align: center;
-margin-top: 0;
-color:white;
-font-family: Georgia, 'Times New Roman', Times, serif;
-text-align: center;
-word-wrap: break-word;      /*Taşmayı önledi*/
-position: absolute;
- }
-
- .bolum img{
-  width: auto ;
-  height: 200px;
-  border-radius: 50%;
-  margin-top: 37%;
-}
-
-.bilgi{
-  position: absolute;
-  margin-left: 30%;
-  margin-top: 10%
-}
 
 article{
   color: #fff;
   font-family: Georgia, 'Times New Roman', Times, serif;
-  font-size: 20px;
+  font-size: 15px;
 }
 
 
@@ -229,6 +219,11 @@ footer{
 
 }
  
+
+footer{
+  text-align: center;
+  color: #fff;
+}
 
 
 
